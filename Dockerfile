@@ -11,5 +11,6 @@ RUN /bin/bash -l -c 'rvm install 2.0.0-p247'
 RUN gem install foreman nokogiri
 RUN gem install bundler --no-ri --no-rdoc
 RUN apt-get install -y libmysqlclient-dev
+RUN apt-get install -y libpq-dev
 
 CMD /bin/bash -l -c 'rvm use 2.0.0-p247 --default'
